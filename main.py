@@ -10,12 +10,12 @@ def generate_password(length):
 
 layout = [
     [sg.Text('Digite o tamanho da senha que você deseja:')],
-    [sg.Input(key='-LENGTH-', size=(20,1))],
+    [sg.Input(key='-LENGTH-', size=(20, 1))],
     [sg.Button('Gerar Senha'), sg.Button('Sair')],
     [sg.Text(size=(40, 1), key='-OUTPUT-')]
 ]
 
-window = sg.Window('Gerador de Senha', layout)
+window = sg.Window('Gerador de Senha', layout, icon='key.icon')
 
 while True:
     event, values = window.read()
